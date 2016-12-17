@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nont.success.MainActivity"
+    android:background="#1D2C43">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="#1D2C43"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="305dp"
+            android:layout_height="191dp"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageLogo"
+            android:adjustViewBounds="false"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="เริ่ม"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonstart"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="normal|bold"
+            android:elevation="0dp"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottonscore"
+            android:text="ประวัติคะเเนน"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textStyle="normal|bold"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="เลิกลา"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottonexit"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="normal|bold"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="39dp"
+            android:id="@+id/buttonsetting"
+            android:background="@drawable/setting"
+            android:textAlignment="center"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+</RelativeLayout>

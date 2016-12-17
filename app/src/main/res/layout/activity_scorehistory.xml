@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nont.success.scorehistory"
+    android:background="#3E968A">
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="ประวัติคะแนน"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView_Dev"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#486972" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerView"
+        android:layout_below="@+id/headerView" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/levelname"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:text="ระดับ ......"
+                android:textAlignment="center"
+                android:padding="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score1"
+                android:text="คะแนน 1 "
+                android:padding="0dp"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score2"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:text="คะแนน 2"
+                android:padding="0dp"
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score3"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:text="คะแนน 3"
+                android:padding="0dp"
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score4"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:text="คะแนน 4"
+                android:padding="0dp"
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/score5"
+                android:textStyle="normal|bold"
+                android:textSize="30sp"
+                android:text="คะแนน 5"
+                android:padding="0dp"
+                android:textColor="@android:color/background_light"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonhomefromhistory"
+            android:layout_weight="1"
+            android:background="@drawable/house"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</RelativeLayout>

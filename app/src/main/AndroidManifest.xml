@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nont.success">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/operator"
+        android:label="Kiddiva"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Levelplay" />
+        <activity android:name=".scorehistory" />
+        <activity android:name=".setting" />
+        <activity android:name=".solutionplay" />
+        <activity android:name=".Dev" />
+        <activity android:name=".scorelevel" />
+        <activity android:name=".play1" />
+        <activity android:name=".play2" />
+        <activity android:name=".play3" />
+        <activity android:name=".scorecount"></activity>
+    </application>
+
+</manifest>

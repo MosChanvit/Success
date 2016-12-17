@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nont.success.scorelevel"
+    android:background="#486972">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:gravity="center"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="คะแนน"
+            android:textSize="48sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.26"
+            android:layout_marginTop="-20dp"
+            android:id="@+id/TextView_S" />
+
+        <Button
+            android:text="ง่าย"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boutton_SE"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Inset" />
+
+
+        <Button
+            android:text="ยาก"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_SN"
+            android:textSize="30sp"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            style="@android:style/Widget.DeviceDefault.Button.Inset" />
+
+        <Button
+            android:text="ยากโว้ย"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_H"
+            android:textSize="30sp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Inset"
+            android:padding="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+

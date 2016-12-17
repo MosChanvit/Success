@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nont.success.Dev"
+    android:background="#486972">
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+        <TextView
+            android:text="ผู้พัฒนา"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextView_Dev"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#3E968A" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerView"
+        android:layout_below="@+id/headerView" >
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="นาย วชิรวิทย์  ชัยสิทธิ์ดำรง    07560439"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_N"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:paddingTop="30dp"
+                android:gravity="center"
+                android:textAlignment="center" />
+            <TextView
+                android:text="นาย ชาญวิทย์  ญาติตาอินทร์    07560554"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_M"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:paddingTop="30dp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+            <TextView
+                android:text="นาย ศุภกฤต   กิจสงวน             07560597"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_I"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_light"
+                android:paddingTop="30dp"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/buttonfromdev"
+            android:layout_weight="1"
+            android:background="@drawable/house"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>
